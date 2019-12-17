@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Pure Python HTML to PDF</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Image credit Hello again! Welcome to another Monday and another short one for you here. So, have you ever needed to make a PDF file...">
+
+        <meta name="author" content="Justin Lillico">
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="justinlillico.com">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="/author/justin-lillico.html">
+	<meta property="og:url" content="/pure-python-html-to-pdf.html">
+	<meta property="og:title" content="Pure Python HTML to PDF">
+	<meta property="article:published_time" content="2019-06-10 00:00:00+10:00">
+            <meta property="og:description" content="Image credit Hello again! Welcome to another Monday and another short one for you here. So, have you ever needed to make a PDF file...">
+
+                <meta property="og:image" content="/images/pdf.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@Apoc182">
+        <meta name="twitter:title" content="Pure Python HTML to PDF">
+
+            <meta name="twitter:image" content="/theme/images/post-bg.jpg">
+
+            <meta name="twitter:description" content="Image credit Hello again! Welcome to another Monday and another short one for you here. So, have you ever needed to make a PDF file...">
+</head>
+
+<body class="article-pure-python-html-to-pdf">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">justinlillico.com</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                                <li class="active"><a href="/category/career.html">Career</a></li>
+                                <li><a href="/category/personal.html">Personal</a></li>
+                                <li><a href="/category/projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('/theme/images/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Pure Python HTML to PDF</h1>
+                        <span class="meta">Posted by
+                                <a href="/author/justin-lillico.html">Justin Lillico</a>
+                             on Mon 10 June 2019
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <img src="images/pdf.png" width=100%> 
+        <hr>
+<p><a href="https://www.microsoft.com/en-us/p/excellent-pdf-reader/">Image credit</a></p>
+<p>Hello again! Welcome to another Monday and another short one for you here.</p>
+<p>So, have you ever needed to make a PDF file programmatically? I know I have. One of the main advantages of having a pdf as opposed to some other graphical format is being able to print them from the right click (context) menu.</p>
+<p>The simplest method of programmatically styling something like this in my experience seems to be HTML. Once you have this, simply use some kind of library to convert it into a PDF. Right? Well, kind of.</p>
+<p>You see, another nuance to this thing here is that generally speaking, you want your applications to be independent of the OS and environment. Well, you might wanna have Python and a couple of packages installed, but that’s it. Let’s not rely on the user to install anything external.</p>
+<p>Let me introduce <a href="https://pypi.org/project/xhtml2pdf/">xhtml2pdf</a></p>
+<p>As I was unable to find any clear cut instructions on how to do this locally, so let me save you some trouble and walk you through it.</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">xhtml2pdf</span> <span class="kn">import</span> <span class="n">pisa</span>
+<span class="kn">from</span> <span class="nn">jinja2</span> <span class="kn">import</span> <span class="n">Environment</span><span class="p">,</span> <span class="n">FileSystemLoader</span>
+</pre></div>
+
+
+<p>First, let's import the pisa module from the xhtml2pdf package. Optionally, you can import the Environment and FileSystemLoader modules from <a href="[http://jinja.pocoo.org/](http://jinja.pocoo.org/)">jinja2</a> if you would like to populate a html template with some data. Then, provided you want to use Jinja2…</p>
+<div class="highlight"><pre><span></span><span class="n">environment</span> <span class="o">=</span> <span class="n">Environment</span><span class="p">(</span><span class="n">loader</span><span class="o">=</span><span class="n">FileSystemLoader</span><span class="p">(</span><span class="n">searchpath</span><span class="o">=</span><span class="s2">&quot;./&quot;</span><span class="p">))</span>
+<span class="n">template</span> <span class="o">=</span> <span class="n">environment</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;./Template.html&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>We create an environment specifying we want to load from the filesystem and that the place to load from is the current directory.</p>
+<div class="highlight"><pre><span></span><span class="n">output_from_parsed_template</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Above, we are grabbing the properly formatted jinja template (with {{ variables }} and the like), and populating it with data. If you want to know more about that, google it. It's not the focus of what I'm talking about here.</p>
+<div class="highlight"><pre><span></span><span class="n">resultFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">outputFilename</span><span class="p">,</span> <span class="s2">&quot;w+b&quot;</span><span class="p">)</span>
+
+<span class="n">pisaStatus</span> <span class="o">=</span> <span class="n">pisa</span><span class="o">.</span><span class="n">CreatePDF</span><span class="p">(</span><span class="n">output_from_parsed_template</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;./output_pdf&quot;</span><span class="p">)</span>
+
+<span class="n">resultFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>In the above, we open some kind of output file for writing as binary. Then, we use the CreatePDF function from pisa to do the magic. Pure, pythonic conversion. Then of course, we tidy up and close the file.</p>
+<p>That's all there is too it folks! Hope that was helpful to someone! See ya'll next week :)</p>
+    </article>
+
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://twitter.com/Apoc182">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Apoc182">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Apocolyptic">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />        &copy;  Justin Lillico
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Learning JavaScript</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="I know what you're thinking... Clearly, I should also be learning how to use software like Adobe Illustrator and not rely so heavily on...">
+
+        <meta name="author" content="Justin Lillico">
+
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="justinlillico.com">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="/author/justin-lillico.html">
+	<meta property="og:url" content="/learning-javascript.html">
+	<meta property="og:title" content="Learning JavaScript">
+	<meta property="article:published_time" content="2017-11-24 00:00:00+10:00">
+            <meta property="og:description" content="I know what you're thinking... Clearly, I should also be learning how to use software like Adobe Illustrator and not rely so heavily on...">
+
+                <meta property="og:image" content="/images/js.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@Apoc182">
+        <meta name="twitter:title" content="Learning JavaScript">
+
+            <meta name="twitter:image" content="/theme/images/post-bg.jpg">
+
+            <meta name="twitter:description" content="I know what you're thinking... Clearly, I should also be learning how to use software like Adobe Illustrator and not rely so heavily on...">
+</head>
+
+<body class="article-learning-javascript">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">justinlillico.com</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                                <li class="active"><a href="/category/career.html">Career</a></li>
+                                <li><a href="/category/personal.html">Personal</a></li>
+                                <li><a href="/category/projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('/theme/images/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Learning JavaScript</h1>
+                        <span class="meta">Posted by
+                                <a href="/author/justin-lillico.html">Justin Lillico</a>
+                             on Fri 24 November 2017
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <img src="images/js.png" width=100%> 
+        <hr>
+
+<p>I know what you're thinking... Clearly, I should also be learning how to use software like Adobe Illustrator and not rely so heavily on MS Paint. But hey, I know it and have been using it for years, seems to do most things I need it to!</p>
+<p>So this week I have been getting well stuck into developing this website. They gave me the task of creating a method of arranging thumbnails by date, views and type. This proved to be just the level of challenge I needed.</p>
+<p>After sitting in front of my computer for nearly two days researching the things I could do using the JQuery library and vanilla JavaScript, I built a few functions to take care of the job.</p>
+<hr>
+<div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
+
+    <span class="nx">echo</span> <span class="s2">&quot;var js_views_dates = [&quot;</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">$i</span> <span class="o">&lt;</span> <span class="nx">sizeof</span><span class="p">(</span><span class="nx">$articles_info</span><span class="p">);</span> <span class="nx">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">echo</span> <span class="s2">&quot; [ &quot;</span> <span class="p">.</span> <span class="nx">$articles_info</span><span class="p">[</span><span class="nx">$i</span><span class="p">][</span><span class="mi">6</span><span class="p">]</span> <span class="p">.</span> <span class="s2">&quot;, &quot;</span> <span class="p">.</span> <span class="nx">strtotime</span><span class="p">(</span><span class="nx">$articles_info</span><span class="p">[</span><span class="nx">$i</span><span class="p">][</span><span class="mi">7</span><span class="p">])</span> <span class="p">.</span> <span class="s2">&quot;] ,&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">echo</span> <span class="s2">&quot;];&quot;</span><span class="p">;</span>
+
+
+<span class="o">?&gt;</span>
+</pre></div>
+
+
+<hr>
+<p>First, I converted the existing array containing the views and dates I needed to know into a JavaScript array. I found a few ways to do this but they were all to complex for me at this level so I came up with this method on my own. Basically just writes the JS on the fly by echoing strings. Pretty simple, but effective.</p>
+<p>I won't bore you with the event listeners. I used Jquery for those. Let's skip to the functions I called AFTER the document was ready...</p>
+<hr>
+<div class="highlight"><pre><span></span><span class="c1">//Get the elements.</span>
+<span class="nx">parent</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;article_box&quot;</span><span class="p">).</span><span class="nx">children</span><span class="p">;</span>
+
+<span class="c1">//Here, we combine the object in its original form along with the views and date gathered from the php.</span>
+<span class="c1">//0 : views</span>
+<span class="c1">//1 : dates</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">js_views_dates</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">js_article_info</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">parent</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">js_views_dates</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">js_views_dates</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]];</span>
+<span class="p">}</span>
+
+<span class="c1">//This preserves the original order of the articles</span>
+<span class="nx">original_order</span> <span class="o">=</span> <span class="nx">js_article_info</span><span class="p">.</span><span class="nx">slice</span><span class="p">();</span>
+</pre></div>
+
+
+<hr>
+<p>So here I get the elements, attach them to the views and dates I got before and save the list as it currently is. I use this when the user chooses to reset from custom arrangements.</p>
+<hr>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">setupOrder</span><span class="p">(</span><span class="nx">original_array</span><span class="p">,</span> <span class="nx">order_by</span><span class="p">,</span> <span class="nx">high_low</span><span class="p">){</span>
+
+    <span class="c1">//This is a sort function that arranges the array by the first dimention, in numeric lowest to highest order</span>
+    <span class="nx">original_array</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">order_by</span><span class="p">]</span> <span class="o">===</span> <span class="nx">b</span><span class="p">[</span><span class="nx">order_by</span><span class="p">])</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">order_by</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">[</span><span class="nx">order_by</span><span class="p">])</span> <span class="o">?</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nx">high_low</span><span class="p">){</span> 
+        <span class="nx">original_array</span><span class="p">.</span><span class="nx">reverse</span><span class="p">();</span> 
+    <span class="p">}</span>
+</pre></div>
+
+
+<hr>
+<p>So I learned what the sort() function did and how to get it to do my bidding. I feel like this is a function I may end up taking advantage of a lot. This is called when the user chooses the arrangement they want. It sets the order of the list based on an integer value representing their choice.</p>
+<hr>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">updateArticles</span><span class="p">(</span><span class="nx">order</span><span class="p">){</span>
+
+    <span class="c1">//This while loop simply removes the contents of the parent div by ID.</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;article_box&quot;</span><span class="p">).</span><span class="nx">hasChildNodes</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;article_box&quot;</span><span class="p">).</span><span class="nx">removeChild</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;article_box&quot;</span><span class="p">).</span><span class="nx">lastChild</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">//This for loop appends the objects from start to finish of the new array.</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">order</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;article_box&quot;</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">order</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<hr>
+<p>Finally, this function is called after setupOrder() to update the elements on the page based on the new information.</p>
+<hr>
+<p>Once I had these functions built, the rest of the logic was only a line or two in the event listeners. I feel like it was efficient, although I'm sure there are many other methods and this is far from the most efficient.</p>
+    </article>
+
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://twitter.com/Apoc182">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Apoc182">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Apocolyptic">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />        &copy;  Justin Lillico
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

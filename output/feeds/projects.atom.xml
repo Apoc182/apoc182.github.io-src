@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>justinlillico.com - Projects</title><link href="http://www.justinlillico.com/" rel="alternate"></link><link href="http://www.justinlillico.com/feeds/projects.atom.xml" rel="self"></link><id>http://www.justinlillico.com/</id><updated>2019-05-27T00:00:00+10:00</updated><entry><title>A Star</title><link href="http://www.justinlillico.com/a-star.html" rel="alternate"></link><published>2019-05-27T00:00:00+10:00</published><updated>2019-05-27T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2019-05-27:/a-star.html</id><summary type="html">&lt;p&gt;&lt;a href="https://cdncontribute.geeksforgeeks.org/"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Why A Star?&lt;/h1&gt;
+&lt;p&gt;So for game development, we were in a situation where we had a player that you could swap for any one of three characters. These characters needed to follow along behind the main character.&lt;/p&gt;
+&lt;p&gt;At first, I thought I could do something simple like…&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;if …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://cdncontribute.geeksforgeeks.org/"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Why A Star?&lt;/h1&gt;
+&lt;p&gt;So for game development, we were in a situation where we had a player that you could swap for any one of three characters. These characters needed to follow along behind the main character.&lt;/p&gt;
+&lt;p&gt;At first, I thought I could do something simple like…&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;if(player.x &amp;gt; character.x) character.x++&lt;/span&gt;
+&lt;span class="err"&gt;if(player.x &amp;lt; character.x) character.x--&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is obviously a simplification but it illustrates the general idea. So then jumping becomes an issue. Say we have a hole in the ground in front of the player. The player jumps over it, leaving the following character in an existential crisis about how to overcome the dilemma before it.&lt;/p&gt;
+&lt;p&gt;You could have the player object leave some kind of marker indicating a jump needed to be performed here and there are indeed some pathfinding systems that work this way. Donkey Kong on the Super Nintendo did something like this with its character following.&lt;/p&gt;
+&lt;p&gt;This was not an option so much for us, however, as we planned to be able to use this same algorithm to have enemies find their way around complex maps.&lt;/p&gt;
+&lt;p&gt;After a considerable amount of research, we settled on the &lt;a href="https://en.wikipedia.org/wiki/A*_search_algorithm"&gt;A Star algorithm&lt;/a&gt;. This algorithm basically finds the shortest available route between two points in a grid of nodes.&lt;/p&gt;
+&lt;h1&gt;What are we working with here?&lt;/h1&gt;
+&lt;p&gt;As you may remember from &lt;a href="http://justinlillico.com/2017/12/15/tis-the-season/html"&gt;my previous post&lt;/a&gt;, I use a little piece of software called GameMaker Studio 2. It works pretty well and I have spent many hours coding in its GML language so I am aware mostly of its strengths and weaknesses.&lt;/p&gt;
+&lt;p&gt;GMS2 has this concept of objects in it which is great. You can create objects and within each one is housed all of its code that is ran for every loop of the game. Objects can also inherit from each other just like any other object-oriented language. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;Player&lt;/span&gt; &lt;span class="k"&gt;object&lt;/span&gt;
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;Basic&lt;/span&gt; &lt;span class="n"&gt;movement&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;speed&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;movement&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;keyboard_check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;vk_right&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;keyboard_check&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;vk_left&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;Checks&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;boolean&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="k"&gt;or&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;movement&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;speed&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The above code here runs inside of the player objects &lt;em&gt;step&lt;/em&gt; event. This runs every frame. This will either move the player forward or backward or not at all depending on what is pressed. Super easy right?&lt;/p&gt;
+&lt;p&gt;But at what cost…&lt;/p&gt;
+&lt;p&gt;The main cost is not being able to define your own classes. Building custom data structures can be a real pain. I read somewhere (sorry, i cant remember where) that the creators tacked on some functions that build pseudo-data structures after GameMaker became popular as it was originally intended as a simple learning language. Things like lists, maps (aka dictionaries), grids (dynamic 2d arrays), stacks, queues etc. were implemented. For the most part, these are sufficient to build some cool stuff.&lt;/p&gt;
+&lt;p&gt;But I want to build a network of nodes that I can store my own custom properties:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;node = {&lt;/span&gt;
+&lt;span class="err"&gt;        &amp;quot;x&amp;quot; : [],&lt;/span&gt;
+&lt;span class="err"&gt;        &amp;quot;y&amp;quot; : [],&lt;/span&gt;
+&lt;span class="err"&gt;        neighbours : [&lt;/span&gt;
+&lt;span class="err"&gt;                {&amp;quot;relationship_type&amp;quot; : &amp;quot;&amp;quot;, &amp;quot;node&amp;quot; : node}&lt;/span&gt;
+&lt;span class="err"&gt;        ]&lt;/span&gt;
+&lt;span class="err"&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;These are just a few of the properties I need to store.&lt;/p&gt;
+&lt;h1&gt;A Star gets a little complicated.&lt;/h1&gt;
+&lt;p&gt;A star is pretty hectic. &lt;/p&gt;
+&lt;p&gt;It basically goes through a set of nodes and checks the distance from the origin in node hopes and the Manhatten distance to the destination while noting a whole bunch of information on the way. Once it arrives at the end, it goes back through the nodes it found and from this data deduces the shortest path.&lt;/p&gt;
+&lt;p&gt;So what we had to do first was create a grid that divided the whole playable gaming area up into squares. Then we had to write some fairly complicated code to determine which of these squares was actually traversable. &lt;/p&gt;
+&lt;p&gt;It doesn't end there. We next needed to calculate the relationship between all these nodes based on the rules of the system. How high can you jump? How fast can you walk? This took a special amount of time to deduce.&lt;/p&gt;
+&lt;p&gt;Once we had all of that, we could plug in our A Star and it would give us a path. We simply tell a sprite to follow the coordinates it output and bam! You have a working AI traversal system.&lt;/p&gt;
+&lt;h1&gt;What I've learned&lt;/h1&gt;
+&lt;p&gt;Unfortunately, as I had no access to custom classes, I was forced to use a horrible mish-mash of maps and grids to store this data. This caused an unnecessary gap between my mind as a developer and what the computer is actually doing as a lot of this code is incomprehensible without a few hours to recap and some decent documentation.&lt;/p&gt;
+&lt;p&gt;Basically, GMS2 may be more limited than I had initially anticipated.&lt;/p&gt;
+&lt;p&gt;I do love it for its simplicity but it is exactly that which causes these kind of problems. I'd imagine had I had the ability to make classes, I would have created node and path classes; each with some super awesome methods and properties to make this puzzle far better abstracted.&lt;/p&gt;
+&lt;p&gt;In future, we may consider using Unity.&lt;/p&gt;
+&lt;h1&gt;What now?&lt;/h1&gt;
+&lt;p&gt;One thing this experience makes me want to do is record a video tutorial on how to set A Star up in GMS2 as we put a lot of effort into it and resources were limited for us. I may post a link to that in here in the coming months. Finding the time could be difficult but I really would like to do it.&lt;/p&gt;
+&lt;p&gt;At this stage, we are going to put this project on hold and make a smaller title using GMS2. I think this is a good decision for the immediate future for us.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>Why Jekyll Rocks</title><link href="http://www.justinlillico.com/why-jekyll-rocks.html" rel="alternate"></link><published>2017-11-28T00:00:00+10:00</published><updated>2017-11-28T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2017-11-28:/why-jekyll-rocks.html</id><summary type="html">&lt;hr&gt;
+
+&lt;p&gt;Some of you out there probably know a little bit about web development and the various frameworks that are available out there. Some of you may be clever enough to realise that this &lt;em&gt;very&lt;/em&gt; site is designed with a static site generator developed with Ruby called “Jekyll”. I just thought …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+
+&lt;p&gt;Some of you out there probably know a little bit about web development and the various frameworks that are available out there. Some of you may be clever enough to realise that this &lt;em&gt;very&lt;/em&gt; site is designed with a static site generator developed with Ruby called “Jekyll”. I just thought I might take a moment to go over why I chose to use this fancy little tool as opposed to blowing you all away with my mad server-side coding skills.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;1. It’s simple&lt;/strong&gt;
+There is no need for super complex bells and whistles when it comes to an online blog or what have you. If I were starting my own Amazon, maybe I might require some database and dynamic server-side scripting, but if I’m honest with myself, I’m not going to be that successful. At least not straight away.&lt;/p&gt;
+&lt;p&gt;No, we start out small and easy. Jekyll is great for that. You give it your content and it renders it into pages for you based on templates you specify.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. It’s fast&lt;/strong&gt;
+This is pretty much a no-brainer. No server-side scripting means no server-side work. No work means much faster load times. That’s not to say there is no logic implemented here though. Jekyll comes out of the box with the ability to read a language called &lt;a href="https://shopify.github.io/liquid/"&gt;Liquid&lt;/a&gt;. Not super flexible but gets the small jobs done nicely. I especially like how you can specify parameters at the beginning of your markdown sheets and use them in your templates as variables essentially.&lt;/p&gt;
+&lt;p&gt;It's cool.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Blog integration&lt;/strong&gt;
+So you don’t need to mess about trying to get your blog to work, Jekyll does all the heavy lifting. As I touched on before, it can read markdown files and render them into readable blog posts. Pretty neat, so much so that I had to use that lame expression. &lt;/p&gt;
+&lt;p&gt;So you can just hop onto an md editor like &lt;a href="https://dillinger.io/"&gt;Dilinger&lt;/a&gt; like I am right now or design your own md editor and get stuck into it. I made my own but found Dillinger to be pretty effective. Look up a markdown cheat sheet like &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;this one&lt;/a&gt; to make the whole process easier, but diving in blind worked fine for me to start with.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. GitHub integration&lt;/strong&gt;
+GitHub is compatible with Jekyll which is awesome. You just tweak a few settings and you can update your site with some simple pushing and pulling as you would any other repo. This is great for me because it meant simply buying a domain name off some cheap company and directing it to my repo. So all I do now when I want to tweak the site is load up Ubuntu as a Virtual Machine (running windows, I like overwatch) and run the &lt;code&gt;jekyll serve&lt;/code&gt; command in the terminal and I'm away to the races. Push my work and within seconds, the site is up to date and behaving exactly as it should.&lt;/p&gt;
+&lt;p&gt;If you're just wanting to post a blog post, you can simply login to your GitHub account, navigate to the &lt;code&gt;_posts/&lt;/code&gt; directory and drag your md files that you produced with an online tool into the folder. It will automatically appear shortly. Particularly useful when inspiration comes out on the farm or on your jet ski or whatever.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. It’s delightful&lt;/strong&gt;
+Jekyll is a gem (pun intended). It takes something that should be simple and &lt;em&gt;keeps&lt;/em&gt; it that way. There are themes available and its pretty easy to tweak them provided you know some simple concepts of web development. This has been greatly useful to me for learning these concepts.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;So do yourselves a favour and use Jekyll for something. Or don't, I don't really mind.&lt;/p&gt;</content><category term="Projects"></category></entry><entry><title>Arduino Meltdown</title><link href="http://www.justinlillico.com/arduino-meltdown.html" rel="alternate"></link><published>2017-10-10T00:00:00+10:00</published><updated>2017-10-10T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2017-10-10:/arduino-meltdown.html</id><summary type="html">&lt;hr&gt;
+
+&lt;p&gt;So today I blew up my arduino. I have been working on a project that involves regulating the temperature inside
+a refridgerater using the built in compressor and a small heater. You guys will hear all about it in the portfolio section
+when it is finished. Seriously, I've been recording …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+
+&lt;p&gt;So today I blew up my arduino. I have been working on a project that involves regulating the temperature inside
+a refridgerater using the built in compressor and a small heater. You guys will hear all about it in the portfolio section
+when it is finished. Seriously, I've been recording the whole thing. 
+&lt;p&gt;
+Anyway, today I was trying to wire in these new relays I got from the job and ended up absent mindedly letting the
+end of a wire bridge a component on the Ardunio board and it started smoking at me. 
+&lt;p&gt;
+So that's a thing that happened, I'll soon have another one so never fear!&lt;/p&gt;</content><category term="Projects"></category><category term="programming"></category><category term="projects"></category></entry><entry><title>Projects projects projects!</title><link href="http://www.justinlillico.com/projects-projects-projects.html" rel="alternate"></link><published>2017-10-09T00:00:00+10:00</published><updated>2017-10-09T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2017-10-09:/projects-projects-projects.html</id><summary type="html">&lt;hr&gt;
+
+&lt;p&gt;G'day! So, this is my first blog post. My name is Justin, as I am sure you have deduced from the domain name, and I am a web developer/guitarist/butcher. Actually, I dare say I am perhaps the only one you know.
+&lt;p&gt;
+So I am currently studying at the …&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+
+&lt;p&gt;G'day! So, this is my first blog post. My name is Justin, as I am sure you have deduced from the domain name, and I am a web developer/guitarist/butcher. Actually, I dare say I am perhaps the only one you know.
+&lt;p&gt;
+So I am currently studying at the Queensland University of Technology to get my degree in Computer Science which seems to be going quite swimmingly. That is the main project at the moment. I am also working part-time as a supermarket butcher and singing in a rock 'n' roll band. I don't know if that sounds like a lot to you, whoever you are, but let me just give you a red hot tip and tell you it is quite a bit of work.
+&lt;p&gt;
+That being said, I haven't currently a lot of room for other projects and the ones I do find time to work on progress quite slowly. Nevermind that though, I have a few cracking ideas to show you all so stay tuned!&lt;/p&gt;</content><category term="Projects"></category></entry></feed>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>justinlillico.com - Career</title><link href="http://www.justinlillico.com/" rel="alternate"></link><link href="http://www.justinlillico.com/feeds/career.atom.xml" rel="self"></link><id>http://www.justinlillico.com/</id><updated>2019-06-24T00:00:00+10:00</updated><entry><title>The F-String</title><link href="http://www.justinlillico.com/the-f-string.html" rel="alternate"></link><published>2019-06-24T00:00:00+10:00</published><updated>2019-06-24T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2019-06-24:/the-f-string.html</id><summary type="html">&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://jcohenmediation.com/divorcing-know-f-word/"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Another way to concatenate strings.&lt;/h1&gt;
+&lt;p&gt;Hi guys, sorry it's been a fortnight! I've been hella busy and still am so this is going to be short.&lt;/p&gt;
+&lt;p&gt;So I recently discovered the f-string in python.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a_string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; are pretty damned cool!&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;f-strings&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;a_string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So I'm sure most of us …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://jcohenmediation.com/divorcing-know-f-word/"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Another way to concatenate strings.&lt;/h1&gt;
+&lt;p&gt;Hi guys, sorry it's been a fortnight! I've been hella busy and still am so this is going to be short.&lt;/p&gt;
+&lt;p&gt;So I recently discovered the f-string in python.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a_string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; are pretty damned cool!&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;f-strings&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;a_string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So I'm sure most of us are familiar with the above for good old string concatenation. If you are super tricky, you might even know…&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a_string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; are pretty damned cool!&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;f-strings&lt;/span&gt;&lt;span class="si"&gt;{0}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a_string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;These are both well and good, but I have recently learned of a method i enjoy more than both of these.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a_string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; are pretty damned cool!&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;f-strings&lt;/span&gt;&lt;span class="si"&gt;{a_string}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Simple. Concise. Beautiful.&lt;/p&gt;
+&lt;p&gt;Stay tuned for next week!&lt;/p&gt;</content><category term="Career"></category></entry><entry><title>Pure Python HTML to PDF</title><link href="http://www.justinlillico.com/pure-python-html-to-pdf.html" rel="alternate"></link><published>2019-06-10T00:00:00+10:00</published><updated>2019-06-10T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2019-06-10:/pure-python-html-to-pdf.html</id><summary type="html">&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/p/excellent-pdf-reader/"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hello again! Welcome to another Monday and another short one for you here.&lt;/p&gt;
+&lt;p&gt;So, have you ever needed to make a PDF file programmatically? I know I have. One of the main advantages of having a pdf as opposed to some other graphical format is being able to …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://www.microsoft.com/en-us/p/excellent-pdf-reader/"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hello again! Welcome to another Monday and another short one for you here.&lt;/p&gt;
+&lt;p&gt;So, have you ever needed to make a PDF file programmatically? I know I have. One of the main advantages of having a pdf as opposed to some other graphical format is being able to print them from the right click (context) menu.&lt;/p&gt;
+&lt;p&gt;The simplest method of programmatically styling something like this in my experience seems to be HTML. Once you have this, simply use some kind of library to convert it into a PDF. Right? Well, kind of.&lt;/p&gt;
+&lt;p&gt;You see, another nuance to this thing here is that generally speaking, you want your applications to be independent of the OS and environment. Well, you might wanna have Python and a couple of packages installed, but that’s it. Let’s not rely on the user to install anything external.&lt;/p&gt;
+&lt;p&gt;Let me introduce &lt;a href="https://pypi.org/project/xhtml2pdf/"&gt;xhtml2pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As I was unable to find any clear cut instructions on how to do this locally, so let me save you some trouble and walk you through it.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;xhtml2pdf&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;pisa&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;jinja2&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Environment&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;FileSystemLoader&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;First, let's import the pisa module from the xhtml2pdf package. Optionally, you can import the Environment and FileSystemLoader modules from &lt;a href="[http://jinja.pocoo.org/](http://jinja.pocoo.org/)"&gt;jinja2&lt;/a&gt; if you would like to populate a html template with some data. Then, provided you want to use Jinja2…&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;environment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Environment&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;loader&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;FileSystemLoader&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;searchpath&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;./&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="n"&gt;template&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;environment&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_template&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;./Template.html&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We create an environment specifying we want to load from the filesystem and that the place to load from is the current directory.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;output_from_parsed_template&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;render&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Above, we are grabbing the properly formatted jinja template (with {{ variables }} and the like), and populating it with data. If you want to know more about that, google it. It's not the focus of what I'm talking about here.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;resultFile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;outputFilename&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;w+b&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;pisaStatus&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pisa&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;CreatePDF&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;output_from_parsed_template&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dest&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;./output_pdf&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;resultFile&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In the above, we open some kind of output file for writing as binary. Then, we use the CreatePDF function from pisa to do the magic. Pure, pythonic conversion. Then of course, we tidy up and close the file.&lt;/p&gt;
+&lt;p&gt;That's all there is too it folks! Hope that was helpful to someone! See ya'll next week :)&lt;/p&gt;</content><category term="Career"></category></entry><entry><title>Python List Comprehension</title><link href="http://www.justinlillico.com/python-list-comprehension.html" rel="alternate"></link><published>2019-06-03T00:00:00+10:00</published><updated>2019-06-03T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2019-06-03:/python-list-comprehension.html</id><summary type="html">&lt;p&gt;&lt;a href="justinlillico.com"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Hi there!&lt;/h1&gt;
+&lt;p&gt;Thought I'd give a big hi today in apologies for the lack of length that this blog post has in comparison with my somewhat hectic previous one. I can't consistently keep banging out blog posts that long though, I'm pretty busy.&lt;/p&gt;
+&lt;h1&gt;So… List Comprehensions&lt;/h1&gt;
+&lt;p&gt;Moving right …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="justinlillico.com"&gt;Image credit&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Hi there!&lt;/h1&gt;
+&lt;p&gt;Thought I'd give a big hi today in apologies for the lack of length that this blog post has in comparison with my somewhat hectic previous one. I can't consistently keep banging out blog posts that long though, I'm pretty busy.&lt;/p&gt;
+&lt;h1&gt;So… List Comprehensions&lt;/h1&gt;
+&lt;p&gt;Moving right along I have learnt how to use a fantastic paradigm in python for creating lists based on other lists called list comprehensions.&lt;/p&gt;
+&lt;p&gt;Take the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# A list of numbers&lt;/span&gt;
+&lt;span class="n"&gt;old_list&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Create a new list&lt;/span&gt;
+&lt;span class="n"&gt;new_list&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Iterate through previous list and add only the even numbers to the new list.&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;old_list&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;new_list&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Cool! So obviously what we are trying to do here is extract the even numbers from the old list.&lt;/p&gt;
+&lt;p&gt;So lets try that out using list comprehensions:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# A list of numbers&lt;/span&gt;
+&lt;span class="n"&gt;old_list&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;new_list&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;old_list&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Would you look at that? The new list creation is now a one liner!&lt;/p&gt;
+&lt;h1&gt;Awesome, so how does it work?&lt;/h1&gt;
+&lt;p&gt;Glad you asked. So, as the name suggests, python is capable of 'comprehending' lists in a simplified way that makes reading a breeze (once you get used to it). A basic format might be something like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;list&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ITEM&lt;/span&gt; &lt;span class="n"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;ORIGINAL&lt;/span&gt; &lt;span class="n"&gt;LIST&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;ITEM&lt;/span&gt; &lt;span class="n"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;ORIGINAL&lt;/span&gt; &lt;span class="n"&gt;LIST&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;ORIGINAL&lt;/span&gt; &lt;span class="n"&gt;LIST&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Alternatively, you could swing in the opposite direction and just go to town on the conditions and chain if statements like so:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;new_list&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;old_list&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;That's all for this week!&lt;/h1&gt;
+&lt;p&gt;Like I said, short and sweet today. Tune in next week for some more geek talk!&lt;/p&gt;</content><category term="Career"></category></entry><entry><title>Learning JavaScript</title><link href="http://www.justinlillico.com/learning-javascript.html" rel="alternate"></link><published>2017-11-24T00:00:00+10:00</published><updated>2017-11-24T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2017-11-24:/learning-javascript.html</id><summary type="html">&lt;hr&gt;
+
+&lt;p&gt;I know what you're thinking... Clearly, I should also be learning how to use software like Adobe Illustrator and not rely so heavily on MS Paint. But hey, I know it and have been using it for years, seems to do most things I need it to!&lt;/p&gt;
+&lt;p&gt;So this week …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+
+&lt;p&gt;I know what you're thinking... Clearly, I should also be learning how to use software like Adobe Illustrator and not rely so heavily on MS Paint. But hey, I know it and have been using it for years, seems to do most things I need it to!&lt;/p&gt;
+&lt;p&gt;So this week I have been getting well stuck into developing this website. They gave me the task of creating a method of arranging thumbnails by date, views and type. This proved to be just the level of challenge I needed.&lt;/p&gt;
+&lt;p&gt;After sitting in front of my computer for nearly two days researching the things I could do using the JQuery library and vanilla JavaScript, I built a few functions to take care of the job.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;?&lt;/span&gt;&lt;span class="nx"&gt;php&lt;/span&gt;
+
+    &lt;span class="nx"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;var js_views_dates = [&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;$i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nx"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$articles_info&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="nx"&gt;$i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nx"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; [ &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;$articles_info&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;$i&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;, &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="nx"&gt;strtotime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$articles_info&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;$i&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;] ,&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="nx"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;];&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+
+&lt;span class="o"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;First, I converted the existing array containing the views and dates I needed to know into a JavaScript array. I found a few ways to do this but they were all to complex for me at this level so I came up with this method on my own. Basically just writes the JS on the fly by echoing strings. Pretty simple, but effective.&lt;/p&gt;
+&lt;p&gt;I won't bore you with the event listeners. I used Jquery for those. Let's skip to the functions I called AFTER the document was ready...&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Get the elements.&lt;/span&gt;
+&lt;span class="nx"&gt;parent&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;article_box&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;children&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="c1"&gt;//Here, we combine the object in its original form along with the views and date gathered from the php.&lt;/span&gt;
+&lt;span class="c1"&gt;//0 : views&lt;/span&gt;
+&lt;span class="c1"&gt;//1 : dates&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nx"&gt;js_views_dates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="nx"&gt;js_article_info&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="nx"&gt;js_views_dates&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="nx"&gt;js_views_dates&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]];&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;//This preserves the original order of the articles&lt;/span&gt;
+&lt;span class="nx"&gt;original_order&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;js_article_info&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;slice&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;So here I get the elements, attach them to the views and dates I got before and save the list as it currently is. I use this when the user chooses to reset from custom arrangements.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;setupOrder&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;original_array&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;high_low&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+
+    &lt;span class="c1"&gt;//This is a sort function that arranges the array by the first dimention, in numeric lowest to highest order&lt;/span&gt;
+    &lt;span class="nx"&gt;original_array&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;===&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;});&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;high_low&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt; 
+        &lt;span class="nx"&gt;original_array&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;reverse&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; 
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;So I learned what the sort() function did and how to get it to do my bidding. I feel like this is a function I may end up taking advantage of a lot. This is called when the user chooses the arrangement they want. It sets the order of the list based on an integer value representing their choice.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;updateArticles&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;order&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+
+    &lt;span class="c1"&gt;//This while loop simply removes the contents of the parent div by ID.&lt;/span&gt;
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;article_box&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;hasChildNodes&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;article_box&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;removeChild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;article_box&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;lastChild&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="c1"&gt;//This for loop appends the objects from start to finish of the new array.&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nx"&gt;order&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+        &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;article_box&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;appendChild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;order&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;Finally, this function is called after setupOrder() to update the elements on the page based on the new information.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Once I had these functions built, the rest of the logic was only a line or two in the event listeners. I feel like it was efficient, although I'm sure there are many other methods and this is far from the most efficient.&lt;/p&gt;</content><category term="Career"></category></entry><entry><title>Back to basics</title><link href="http://www.justinlillico.com/back-to-basics.html" rel="alternate"></link><published>2017-11-19T00:00:00+10:00</published><updated>2017-11-19T00:00:00+10:00</updated><author><name>Justin Lillico</name></author><id>tag:www.justinlillico.com,2017-11-19:/back-to-basics.html</id><summary type="html">&lt;hr&gt;
+
+&lt;p&gt;So since my last post, I have begun working as a volunteer. The Arduino project is on hiatus.
+&lt;p&gt;
+As it happens, it is considerably difficult to acquire paid work when you are but a meagre, inexperienced web developer. And by inexperienced, I mean I don’t have any idea how …&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+
+&lt;p&gt;So since my last post, I have begun working as a volunteer. The Arduino project is on hiatus.
+&lt;p&gt;
+As it happens, it is considerably difficult to acquire paid work when you are but a meagre, inexperienced web developer. And by inexperienced, I mean I don’t have any idea how to build websites. I get the concepts and the word ‘JavaScript’ doesn’t leave me thinking about some kind of dialogue for a coffee cup but as I am rapidly learning, this is not enough.
+&lt;p&gt;
+I have been graciously afforded an opportunity to get some hands-on experience, even after I admitted I was slowly drowning in alien code. The website I am working on is not being built from the ground up, but my understanding of it is. I am forced to study everything: from where every bit bounces about to what the CSS colour code for deep cyan is. This way I learn its function.
+&lt;p&gt;
+Luckily for me, when it comes to problem solving, I can’t sleep until I get it. Seriously, I’ve been known to avoid eating—nearly dying as a consequence—in order to just fix that one little problem… But I suppose that’s a common attribute for coders. We love the punishment. I am a precious little snowflake though. I like to stare at these riddles for so long that the symbols that represent math and logic slowly become stripped of their meaning. Some people like football, I like brain melting. What of it?&lt;br&gt;
+&lt;p&gt;
+Anyway, I learn this way. As a wise man (aka Turk from the hit television series Scrubs) once said: learn by doing. I find it works best for me. So, while I may be at school, have no experience, thirty years old and currently exchanging precious hours of my life for money carving up deceased beasts, I have this tenacious drive on my side.
+&lt;p&gt;
+If you are a potential employer reading this, please don’t be deterred. I am actually quite professional.&lt;/p&gt;</content><category term="Career"></category></entry></feed>
